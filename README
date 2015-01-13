@@ -1,0 +1,26 @@
+csgraph Program:
+Just compile with make and run with line ./csgraph . I had to hardcode readability into it and had to manipulate BFS a little in order to get the correct result.
+BFS does not account for "prerequisites" where both nodes must be visited before you can go to the node that is connected by both.
+I also added semester lines to tell what semester each class must be in.
+The minimum number of semesters is 5.
+I do not know how to fully manipulate the algorithm so there are some hardcodes in there in order to manipulate BFS the way I want it to be.
+This could be considered a bug, but other than that there are no bugs as far as I am concerned.
+The output as far as I am concerned is correct, but the way the program is done may not be optimal. 
+
+b2 Program:
+Just compile with make and run with line ./b2. I used the simplex method to solve this problem. 
+I calculated the pivot column, pivot row, and pivot element using for loops and finding the minimums.
+In order to manipulate row operations to get 0's within the pivot column, I hardcoded the steps.
+Once I had 0's in the pivot column, it became easy to solve for x within the equation 60x + 60y = 300.
+I solved for x within the program and got a value named "xval".
+I solved for a value called "yval" by plugging in xval into the equation and solving for y.
+xval returns the number of cups of Drink X that should be taken.
+yval returns the number of cups of Drink Y that should be taken.
+.12(xval) + .15(yval) returns the minimum cost, 0.66. 
+
+partb Extra Credit:
+Attached is a picture file of my work for the extra credit.
+I tried to program it but too many values are to be handled and I didn't have enough time to submit.
+I am hoping I still get partial credit for attempting. 
+The maximized P value is 268, where x1 = 1.8, x2 = 20.8, x3 = 1.6. 
+The extracred.cpp file is incomplete. 
